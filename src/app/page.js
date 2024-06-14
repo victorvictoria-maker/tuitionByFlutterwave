@@ -23,7 +23,7 @@ export default function Home() {
         </ul>
         <div className='flex-1 flex justify-end'>
           <Link href='/create-account'>
-            <button className='bg-primaryBlue text-neutralWhite py-2 px-4 rounded-lg'>
+            <button className='bg-primaryBlue text-neutralWhite py-2 px-4 rounded-lg font-light'>
               Sign Up
             </button>
           </Link>
@@ -32,13 +32,13 @@ export default function Home() {
       <main>
         {/* HERO SECTION */}
         <section className='text-center my-20  mx-24'>
-          <h1 className='text-80px font-semibold text-textColor mb-12 px-8'>
-            <span className='text-orangeColor'>Tuition</span> is your gateway to
-            global excellence
+          <h1 className='text-80px  text-textColor mb-12 px-8 font-millik font-normal'>
+            <span className='text-orangeColor '>Tuition</span> is your gateway
+            to global excellence
           </h1>
           <p
-            className='text-textColor leading-8 mb-11'
-            style={{ fontSize: "22px" }}
+            className='text-textColor leading-8 mb-11 text-[22px]'
+            // style={{ fontSize: "22px" }}
           >
             Connecting you with everything you need for a seamless and
             successful educational journey, from guidance and resources to

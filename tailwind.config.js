@@ -23,6 +23,16 @@ module.exports = {
         grayColor200: "#DFE0E5",
         grayColor50: "#CBD9E4",
       },
+      fontFamily: {
+        moderat: ["Moderat", "sans-serif"],
+        millik: ["Millik", "sans-serif"],
+      },
+      fontWeight: {
+        light: 300,
+        normal: 400,
+        semiBold: 500,
+        bold: 700,
+      },
     },
   },
   plugins: [],
