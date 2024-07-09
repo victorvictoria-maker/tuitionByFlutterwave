@@ -1,6 +1,12 @@
 import Navbar from "../components/navigation";
 import Sidebar from "../components/sidebar";
 
+// import { Metadata } from 'next';
+
+export const metadata = {
+  title: "Home ",
+};
+
 const HomeLayout = ({ children }) => {
   return (
     <div className='flex'>

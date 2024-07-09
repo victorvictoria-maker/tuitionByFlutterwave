@@ -1,5 +1,8 @@
 import Image from "next/image";
-import { FaUniversity, FaRegCheckCircle } from "react-icons/fa";
+
+export const metadata = {
+  title: "Events",
+};
 
 const dummyEvents = [
   {
@@ -204,7 +207,6 @@ const page = () => {
             </p>
           </div>
           <div className='w-1/2 h-full flex flex-col justify-center space-y-28 items-end pr-6'>
-            {/* <div className='bg-red-400 '> */}
             <div className='flex gap-5 '>
               <Image
                 width={41}
@@ -232,7 +234,6 @@ const page = () => {
                 Register
               </button>
             </div>
-            {/* </div> */}
           </div>
         </section>
 
