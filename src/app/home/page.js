@@ -40,12 +40,8 @@ const Homepage = () => {
 
   return (
     <div className='flex'>
-      <Sidebar />
-
       <div className='flex-1 bg-[#eee]'>
         <div className='max-w-[90%] mx-auto'>
-          <Navbar />
-
           <HeroSection />
 
           <Search />

@@ -190,7 +190,8 @@ export default function Home() {
         </section>
 
         {/* HOW IT WORKS */}
-        <section className='mx-24'>
+        <section>How it works section</section>
+        {/* <section className='mx-24'>
           <h1 className='text-textColor text-80px text-center font-semibold'>
             How it works
           </h1>
@@ -314,7 +315,7 @@ export default function Home() {
               </svg>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* WHAT STUDENTS SAY */}
         <section className='mx-24'>
           <h1 className='text-textColor text-80px text-center font-semibold'>
