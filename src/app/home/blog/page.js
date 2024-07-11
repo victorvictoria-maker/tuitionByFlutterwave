@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Search from "../../components/search";
 
+export const metadata = {
+  title: "Blog",
+};
+
 const dummyVideos = [
   {
     id: 1,

@@ -22,6 +22,7 @@ module.exports = {
         grayColor500: "838E9E",
         grayColor200: "#DFE0E5",
         grayColor50: "#CBD9E4",
+        greenColor25: "rgba(0, 158, 58, 0.25)",
       },
       fontFamily: {
         moderat: ["Moderat", "sans-serif"],
