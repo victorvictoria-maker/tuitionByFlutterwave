@@ -20,6 +20,7 @@ module.exports = {
         neutralWhite: "#FDFDFD",
         grayColor900: "061C3D",
         grayColor500: "838E9E",
+        grayColor300: "#B8B4B4",
         grayColor200: "#DFE0E5",
         grayColor50: "#CBD9E4",
         greenColor25: "rgba(0, 158, 58, 0.25)",

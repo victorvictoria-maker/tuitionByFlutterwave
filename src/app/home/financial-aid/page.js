@@ -138,11 +138,11 @@ const page = () => {
           >
             {/* Hosted by text */}
             <div className='absolute text-sm font-semiBold top-0 left-0 bg-greenColor25 text-[#2D2C3C] px-2 py-1 rounded-br-lg '>
-              Hosted by {finance.host}
+              Hosted by: {finance.host}
             </div>
 
             {/* Logo */}
-            <div className='flex justify-center mt-[30px] mb-8'>
+            <div className='flex justify-center pt-12  mb-8'>
               <Image
                 src={finance.logo}
                 alt={finance.title}
@@ -238,11 +238,11 @@ const page = () => {
           >
             {/* Hosted by text */}
             <div className='absolute text-sm font-semiBold top-0 left-0 bg-greenColor25 text-[#2D2C3C] px-2 py-1 rounded-br-lg '>
-              Hosted by {finance.host}
+              Hosted by: {finance.host}
             </div>
 
             {/* Logo */}
-            <div className='flex justify-center mt-[30px] mb-8'>
+            <div className='flex justify-center  pt-12 mb-8'>
               <Image
                 src={finance.logo}
                 alt={finance.title}
