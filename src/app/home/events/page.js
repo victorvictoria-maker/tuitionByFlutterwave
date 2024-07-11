@@ -101,7 +101,7 @@ const dummyEvents2 = [
 ];
 const page = () => {
   return (
-    <section className='mt-4 mb-10'>
+    <main className='mt-4 mb-10'>
       <h2 className='text-3xl font-bold font-moderat word-wide text-[#01020D]'>
         Events
       </h2>
@@ -305,7 +305,7 @@ const page = () => {
           </div>
         </section>
       </div>
-    </section>
+    </main>
   );
 };
 

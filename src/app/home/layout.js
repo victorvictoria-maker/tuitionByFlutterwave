@@ -4,7 +4,7 @@ import Sidebar from "../components/sidebar";
 // import { Metadata } from 'next';
 
 export const metadata = {
-  title: "Home ",
+  title: "Home",
 };
 
 const HomeLayout = ({ children }) => {
