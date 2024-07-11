@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { GoArrowRight } from "react-icons/go";
 
+export const metadata = {
+  title: "Counselling",
+};
+
 const page = () => {
   return (
     <main className='rounded-lg bg-white border border-grayColor300 px-16 pt-12 pb-5 mt-32'>
