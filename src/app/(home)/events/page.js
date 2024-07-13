@@ -101,7 +101,7 @@ const dummyEvents2 = [
 ];
 const page = () => {
   return (
-    <main className='mt-4 mb-10'>
+    <main className='mt-4 mb-20'>
       <h2 className='text-3xl font-bold font-moderat word-wide text-[#01020D]'>
         Events
       </h2>

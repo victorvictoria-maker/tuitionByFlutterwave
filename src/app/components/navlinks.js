@@ -9,24 +9,24 @@ const links = [
   { name: "Home", href: "/home", icon: "/images/home-alt.svg" },
   {
     name: "Dashboard",
-    href: "/home/dashboard",
+    href: "/dashboard",
     icon: "/images/grid-22.svg",
   },
   {
     name: "Financial Aid",
-    href: "/home/financial-aid",
+    href: "/financial-aid",
     icon: "/images/coins22.svg",
   },
-  { name: "Events", href: "/home/events", icon: "/images/calendar22.svg" },
-  { name: "Counselling", href: "/home/counselling", icon: "/images/heart.svg" },
-  { name: "Resources", href: "/home/resources", icon: "/images/bulb22.svg" },
-  { name: "Blog", href: "/home/blog", icon: "/images/newspaper.svg" },
+  { name: "Events", href: "/events", icon: "/images/calendar22.svg" },
+  { name: "Counselling", href: "/counselling", icon: "/images/heart.svg" },
+  { name: "Resources", href: "/resources", icon: "/images/bulb22.svg" },
+  { name: "Blog", href: "/blog", icon: "/images/newspaper.svg" },
   {
     name: "Community",
-    href: "/home/community",
+    href: "/community",
     icon: "/images/user-group22.svg",
   },
-  { name: "Support", href: "/home/support", icon: "/images/message.svg" },
+  { name: "Support", href: "/support", icon: "/images/message.svg" },
 ];
 
 const Navlinks = () => {

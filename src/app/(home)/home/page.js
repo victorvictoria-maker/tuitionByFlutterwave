@@ -1,13 +1,13 @@
 import Image from "next/image";
-import FeaturedUniCard from "../components/homepage/featuredUniveristies";
-import Navbar from "../components/navigation";
-import Sidebar from "../components/sidebar";
-import Categories from "../components/homepage/courseCategories";
-import CoursesRecommended from "../components/homepage/recommendedCourses";
-import universities from "../data/universities";
-import HeroSection from "../components/heroSection";
-import Search from "../components/search";
-import FeaturedPrograms from "../components/feauturedPrograms";
+import FeaturedUniCard from "../../components/homepage/featuredUniveristies";
+import Navbar from "../../components/navigation";
+import Sidebar from "../../components/sidebar";
+import Categories from "../../components/homepage/courseCategories";
+import CoursesRecommended from "../../components/homepage/recommendedCourses";
+import universities from "../../data/universities";
+import HeroSection from "../../components/heroSection";
+import Search from "../../components/search";
+import FeaturedPrograms from "../../components/feauturedPrograms";
 
 const Homepage = () => {
   const dummyCategories = [

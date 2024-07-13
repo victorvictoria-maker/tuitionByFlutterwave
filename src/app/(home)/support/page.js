@@ -2,12 +2,12 @@ import Image from "next/image";
 import { GoArrowLeft } from "react-icons/go";
 
 export const metadata = {
-  title: "Counselling",
+  title: "Support",
 };
 
 const page = () => {
   return (
-    <main className='rounded-lg bg-white border border-grayColor300 px-16 pt-12 pb-12 my-32 '>
+    <main className='rounded-lg bg-white border border-grayColor300 px-16 pt-12 pb-12 mt-32 mb-60 '>
       <div className='flex gap-2 '>
         <GoArrowLeft className=' w-[40px] h-[40px]' />
         <h2 className='font-bold text-2xl text-[#01020D] my-auto'>Tuition</h2>
@@ -19,7 +19,7 @@ const page = () => {
           alt='Logo'
           width={424}
           height={227}
-          className='mx-auto'
+          className='mx-auto my-6'
         />
         <p className='mt-20 text-xl text-[#414141]'>
           Hello there! How can we help?

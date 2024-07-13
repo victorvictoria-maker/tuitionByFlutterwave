@@ -121,7 +121,7 @@ const dummyFinance2 = [
 
 const page = () => {
   return (
-    <main className='mt-4 mb-10'>
+    <main className='mt-4 mb-40'>
       <h2 className='text-3xl font-bold font-moderat word-wide text-[#01020D]'>
         Financial Aid
       </h2>
