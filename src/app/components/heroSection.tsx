@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className='mt-4 mb-10'>
+    <section className='mt-4 mb-10 '>
       <h2 className='text-3xl font-bold font-moderat word-wide text-[#01020D]'>
         Hello, Jewel
       </h2>

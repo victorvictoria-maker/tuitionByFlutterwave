@@ -7,7 +7,7 @@ export const metadata = {
   title: "Home",
 };
 
-const HomeLayout = ({ children }) => {
+const HomeLayout = ({ children }): React.ReactNode => {
   return (
     <div className='flex'>
       <Sidebar />

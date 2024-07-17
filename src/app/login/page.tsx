@@ -7,7 +7,7 @@ import Link from "next/link";
 const StudentForm = () => {
   const router = useRouter();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     router.push("/home");
   };

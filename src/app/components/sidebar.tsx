@@ -4,7 +4,7 @@ import Navlinks from "./navlinks";
 
 const Sidebar = () => {
   return (
-    <div className='w-1/6 p-4'>
+    <div className='w-1/6 py-4 '>
       <Image
         src='/images/logo3.svg'
         alt='Logo'

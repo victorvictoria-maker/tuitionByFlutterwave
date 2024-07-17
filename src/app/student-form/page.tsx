@@ -11,7 +11,7 @@ const StudentForm = () => {
   const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     router.push("/login");
   };

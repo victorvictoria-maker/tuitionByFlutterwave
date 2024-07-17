@@ -33,7 +33,7 @@ const Navlinks = () => {
   const pathname = usePathname();
 
   return (
-    <ul className='flex flex-col gap-6  w-3/4 mx-auto pb-[150px]'>
+    <ul className='flex flex-col gap-6 w-3/4 mx-auto pb-[150px]'>
       {links.map((link) => {
         return (
           <Link
@@ -43,7 +43,7 @@ const Navlinks = () => {
               "bg-blueGradient text-white": pathname === link.href,
             })}
           >
-            <button className='flex gap-3 my-3 mx-[18px] '>
+            <button className='flex gap-3 my-3 ml-[15px] mr-[18px] '>
               <Image src={link.icon} alt='Home Icon' width={20} height={20} />{" "}
               {link.name}
             </button>

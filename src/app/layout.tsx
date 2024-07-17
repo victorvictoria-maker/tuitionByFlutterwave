@@ -15,7 +15,9 @@ export const metadata = {
   // metadataBase: new URL("https://next-learn-dashboard.vercel.sh"),
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang='en'>
       <body className={`${inter.className} `}>{children}</body>
