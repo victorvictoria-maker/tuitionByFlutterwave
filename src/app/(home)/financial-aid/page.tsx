@@ -233,7 +233,7 @@ const page = () => {
       <section className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 '>
         {dummyFinance2.map((finance) => (
           <div
-            key={finance.index}
+            key={finance.id}
             className='bg-white text-black rounded-lg overflow-hidden shadow-sm relative'
           >
             {/* Hosted by text */}
