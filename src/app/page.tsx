@@ -550,7 +550,7 @@ export default function Home() {
                 <textarea
                   id='message'
                   name='message'
-                  rows='4'
+                  rows={4}
                   placeholder='Tell about your project...'
                   className='mt-1 block w-full p-2 border rounded-md'
                 ></textarea>
