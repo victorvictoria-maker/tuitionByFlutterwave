@@ -3,9 +3,9 @@ import Sidebar from "../components/sidebar";
 
 // import { Metadata } from 'next';
 
-export const metadata = {
-  title: "Home",
-};
+// export const metadata = {
+//   title: "Home",
+// };
 
 const HomeLayout = ({ children }): React.ReactNode => {
   return (

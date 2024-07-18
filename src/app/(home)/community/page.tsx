@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "Community",
+};
+
 const page = () => {
   return <div>Community page</div>;
 };

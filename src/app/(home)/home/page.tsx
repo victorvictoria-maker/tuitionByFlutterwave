@@ -9,6 +9,10 @@ import HeroSection from "../../components/heroSection";
 import Search from "../../components/search";
 import FeaturedPrograms from "../../components/feauturedPrograms";
 
+export const metadata = {
+  title: "Home",
+};
+
 const Homepage = () => {
   const dummyCategories = [
     "Arts and Humaniities",

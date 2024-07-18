@@ -8,8 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    template: "%s | Tuition By Flutter",
-    default: "Tuition By Flutter",
+    template: "%s | Tuition By Flutterwave",
+    default: "Tuition By Flutterwave",
   },
   description: "Tuition By Flutter Project.",
   // metadataBase: new URL("https://next-learn-dashboard.vercel.sh"),
