@@ -1,12 +1,29 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useContext } from "react";
+import { UserContext } from "../context/userContext";
 
 const HeroSection = () => {
+  const userDetails = useContext(UserContext);
+  const firstName = userDetails?.full_name
+    ? userDetails.full_name.split(" ")[0]
+    : "";
+
+  const nameInitials = firstName.charAt(0).toUpperCase();
+
   return (
     <section className='mt-4 mb-10 '>
-      <h2 className='text-3xl font-bold font-moderat word-wide text-[#01020D]'>
-        Hello, Jewel
-      </h2>
+      {userDetails ? (
+        <h2 className='text-3xl font-bold font-moderat word-wide text-[#01020D]'>
+          Hello, {firstName}
+        </h2>
+      ) : (
+        <h2 className='text-3xl font-bold font-moderat word-wide text-[#01020D]'>
+          <p className='bg-gray-300 h-8 w-32 rounded-md animate-pulse'></p>
+        </h2>
+      )}
 
       <div
         className='mt-[40px] flex justify-between text-black  rounded-xl mb-6'

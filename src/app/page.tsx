@@ -22,7 +22,7 @@ export default function Home() {
           <li>Contact Us</li>
         </ul>
         <div className='flex-1 flex justify-end'>
-          <Link href='/create-account'>
+          <Link href='/signup'>
             <button className='bg-primaryBlue text-neutralWhite py-2 px-4 rounded-lg font-light'>
               Sign Up
             </button>
@@ -44,7 +44,7 @@ export default function Home() {
             successful educational journey, from guidance and resources to
             support and opportunities.
           </p>
-          <Link href='/create-account'>
+          <Link href='/signup'>
             <button className='bg-primaryBlue text-neutralWhite rounded-lg mb-12 px-20 py-4'>
               Get Started
             </button>
