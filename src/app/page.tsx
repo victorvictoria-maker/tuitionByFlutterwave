@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import FAQ from "./components/faq";
-
-// import Image from "next/image";
+import UniversitesAndPrograms from "./components/universitiesAndPrograms";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -123,6 +123,7 @@ export default function Home() {
           </div>
         </section>
       </div>
+
       {/* WHY USE TUITION */}
       <section className='mb-4 mx-24'>
         <h1 className='text-textColor text-80px text-center font-millik font-normal '>
@@ -255,6 +256,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* HOW IT WORKS */}
       <section>
         <div className='container mx-auto p-4 mb-28'>
@@ -262,7 +264,7 @@ export default function Home() {
             How It Works
           </h1>
 
-          <div className='relative flex flex-col md:flex-row justify-between  space-y-8 md:space-y-0 md:space-x-12 py-32'>
+          <div className='relative flex flex-col md:flex-row justify-between  space-y-8 md:space-y-0 md:space-x-8 py-32'>
             <div className='flex space-x-4 '>
               <div className='text-primaryBlue  border-2 border-primaryBlue w-20 h-12 flex items-center justify-center rounded-full font-bold '>
                 1
@@ -279,7 +281,7 @@ export default function Home() {
             </div>
 
             {/* Curly Arrow 1 */}
-            <div className='hidden md:block absolute left-[-3%] top-[45%] '>
+            <div className='hidden md:block absolute left-[-1%] top-[48%] '>
               <Image
                 src='/images/how-it-works-curve1.svg'
                 width={270}
@@ -305,7 +307,7 @@ export default function Home() {
             </div>
 
             {/* Curly Arrow 2 */}
-            <div className='hidden md:block absolute  left-[23%] top-[11%] '>
+            <div className='hidden md:block absolute  left-[24%] top-[11%] '>
               <Image
                 src='/images/how-it-works-curve2.svg'
                 width={270}
@@ -331,7 +333,7 @@ export default function Home() {
             </div>
 
             {/* Curly Arrow 3 */}
-            <div className='hidden md:block absolute left-[49%] top-[45%]'>
+            <div className='hidden md:block absolute left-[51%] top-[48%]'>
               <Image
                 src='/images/how-it-works-curve1.svg'
                 width={270}
@@ -377,14 +379,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* UNIVERSITIES AND PROGRAMS */}
-      <section>Univeriites and Programs</section>
+      <UniversitesAndPrograms />
+
       <div
         className='relative bg-contain bg-no-repeat bg-left'
         style={{ backgroundImage: "url('/images/middle-bg-logo.svg')" }}
       >
         {/* HEAR FROM OUR ROCKSTARS */}
-        <section className='mb-28'>
+        <section className='mb-28  pt-28'>
           <h1 className='text-textColor text-80px text-center font-millik font-normal mx-24'>
             Hear from our rockstars at Tuition
           </h1>
@@ -482,54 +486,56 @@ export default function Home() {
         </section>
       </div>
       {/* FLUTTER WAVE STUDENT LOAN  - AD 2*/}
-      {/* <section className='container mx-4 bg-[#F5AFCB73] rounded-lg '>
-        <div className='flex flex-col md:flex-row items-center '>
-          <div className='w-1/2 flex flex-col items-center text-center md:items-start md:text-left mt-12 ml-12 px-4 '>
-            <Image
-              src='/images/flutterLogo.png'
-              width={86}
-              height={71}
-              alt='Description of image'
-              className=' mb-5'
-            />
-            <h2 className='text-6xl font-bold text-[#0A0E27] mb-5'>
-              Flutterwave <br /> Student Loan
-            </h2>
-            <p className='text-textColor text-lg mb-6'>
-              Access Flutterwave Student Loans through Tuition &ndash; Easy,
-              Flexible, and Designed to Help You Achieve Your Academic Dreams!
-            </p>
-            <Link href='/signup'>
-              <button className='bg-primaryBlue text-neutralWhite rounded-lg mb-5 px-20 py-4'>
-                Apply Now
-              </button>
-            </Link>
-          </div>
+      <section className='m-4'>
+        <div className='bg-[#F5AFCB73] rounded-lg pl-6 mb-28'>
+          <div className='flex flex-col md:flex-row items-center'>
+            <div className='md:w-1/2 flex flex-col items-center text-center md:items-start md:text-left mt-12 px-4'>
+              <Image
+                src='/images/flutterLogo.png'
+                width={86}
+                height={71}
+                alt='Flutterwave Logo'
+                className='mb-5'
+              />
+              <h2 className='text-4xl md:text-6xl font-bold text-[#0A0E27] mb-5'>
+                Flutterwave <br /> Student Loan
+              </h2>
+              <p className='text-textColor text-lg mb-6'>
+                Access Flutterwave Student Loans through Tuition &ndash; Easy,
+                Flexible, and Designed to Help You Achieve Your Academic Dreams!
+              </p>
+              <Link href='/signup'>
+                <button className='bg-primaryBlue text-neutralWhite rounded-lg mb-5 px-16 py-3'>
+                  Apply Now
+                </button>
+              </Link>
+            </div>
 
-          <div className='w-1/2 flex flex-col md:flex-row '> */}
-      {/* <Image
-              src='/images/sparkle.svg'
-              width={150}
-              height={50}
-              alt='Sparkles'
-              className='w-1/6  '
-            /> */}
-      {/* <Image
-              src='/images/studentloan.png'
-              width={743}
-              height={543}
-              alt='Student holding books'
-              className='w-5/6'
-            />
+            <div className='md:w-1/2 flex justify-center items-center space-x-4 mt-6 md:mt-0 '>
+              <Image
+                src='/images/sparkle.svg'
+                width={60}
+                height={60}
+                alt='Sparkle'
+                className='w-1/5'
+              />
+              <Image
+                src='/images/studentloan.png'
+                width={743}
+                height={543}
+                alt='Student holding books'
+                className='w-4/5 '
+              />
+            </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       <FAQ />
 
       {/* ULTIMATE EDUCATION PARTNER */}
       <section
-        className='text-center py-8  text-white container mx-auto  p-4 '
+        className='text-center pt-8  text-white container mx-auto px-4'
         // style={{ backgroundImage: "url('/images/educationpartnerbg.svg')" }}
       >
         <div
@@ -555,115 +561,137 @@ export default function Home() {
           </button>
         </div>
       </section>
+
       {/* GET IN TOUCH */}
-      <section className='text-center py-16 '>
-        <h1 className='text-64px  font-semibold mb-8 '>Get in touch</h1>
-        <div className='flex justify-center align-middle gap-16 text-center '>
-          <div className='px-5'>
-            <Image
-              src='/images/twi3.svg'
-              alt='Twitter'
-              width={32}
-              height={32}
-              className='mx-auto'
-            />
-            <p className='leading-6 text-textColor'>Twitter</p>
+      <div
+        className='relative bg-contain bg-no-repeat bg-right pt-8'
+        style={{ backgroundImage: "url('/images/top-bg-logo.svg')" }}
+      >
+        <section className='text-center py-16 '>
+          <h1 className='text-textColor text-80px text-center font-millik font-normal mx-24 mb-12'>
+            Get in touch
+          </h1>
+          <div className='flex justify-center align-middle gap-16 text-center '>
+            <div className='px-5'>
+              <Image
+                src='/images/twi3.svg'
+                alt='Twitter'
+                width={32}
+                height={32}
+                className='mx-auto'
+              />
+              <p className='leading-6 text-textColor'>Twitter</p>
+            </div>
+            <div className='px-5'>
+              <Image
+                src='/images/ig4.svg'
+                alt='Instagram'
+                width={32}
+                height={32}
+                className='mx-auto'
+              />
+              <p className='leading-6 text-textColor'>Instagram</p>
+            </div>
+            <div className='px-5'>
+              <Image
+                src='/images/facebook.svg'
+                alt='Facebook'
+                width={32}
+                height={32}
+                className='mx-auto'
+              />
+              <p className='leading-6 text-textColor'>Facebook</p>
+            </div>
           </div>
-          <div className='px-5'>
-            <Image
-              src='/images/ig4.svg'
-              alt='Instagram'
-              width={32}
-              height={32}
-              className='mx-auto'
-            />
-            <p className='leading-6 text-textColor'>Instagram</p>
-          </div>
-          <div className='px-5'>
-            <Image
-              src='/images/facebook.svg'
-              alt='Facebook'
-              width={32}
-              height={32}
-              className='mx-auto'
-            />
-            <p className='leading-6 text-textColor'>Facebook</p>
-          </div>
-        </div>
-        <div className='py-9 my-10 bg-grayColor200'>
-          <form className='max-w-2xl  mx-auto  rounded-lg '>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-5'>
-              <div className='text-left'>
-                <label
-                  htmlFor='name'
-                  className='text-sm font-medium text-gray-700'
-                >
-                  Name
-                </label>
-                <input
-                  type='text'
-                  id='name'
-                  name='name'
-                  className='mt-1 block w-full p-2 border border-gray-300 rounded-md'
-                />
+          <div className='py-9 my-10 bg-grayColor200'>
+            <form className='max-w-2xl  mx-auto  rounded-lg '>
+              <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-5'>
+                <div className='text-left'>
+                  <label
+                    htmlFor='name'
+                    className='text-sm font-medium text-gray-700'
+                  >
+                    Name
+                  </label>
+                  <input
+                    type='text'
+                    id='name'
+                    name='name'
+                    className='mt-1 block w-full p-2 border border-gray-300 rounded-md'
+                  />
+                </div>
+                <div className='text-left'>
+                  <label
+                    htmlFor='email'
+                    className=' text-sm font-medium text-gray-700'
+                  >
+                    Email
+                  </label>
+                  <input
+                    type='email'
+                    id='email'
+                    name='email'
+                    className='mt-1 block w-full p-2 border border-gray-300 rounded-md'
+                  />
+                </div>
               </div>
-              <div className='text-left'>
-                <label
-                  htmlFor='email'
-                  className=' text-sm font-medium text-gray-700'
-                >
-                  Email
+              <div className='mb-6 text-left'>
+                <label htmlFor='message' className=' text-sm text-grayColor900'>
+                  Message
                 </label>
+                <textarea
+                  id='message'
+                  name='message'
+                  rows={4}
+                  placeholder='Tell about your project...'
+                  className='mt-1 block w-full p-2 border rounded-md'
+                ></textarea>
+              </div>
+              <div className='text-center'>
+                <button
+                  type='submit'
+                  className='px-6 py-3 bg-primaryBlue text-neutralWhite font-semibold rounded-lg '
+                >
+                  Send us a message
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        {/* BE THE FIRST TO KNOW */}
+        <section className='relative top-12 bg-[#F4F1F8] py-16 mx-12 rounded-lg'>
+          <div className='container mx-auto text-center'>
+            <h1 className='text-4xl font-millik font-bold text-[#2A3342] mb-2'>
+              Be the first to know when we launch
+            </h1>
+            <p className='text-xl text-[#556987] font-semiBold mb-6'>
+              Stay in the loop with everything you need to know.
+            </p>
+
+            <div className='max-w-[458px] mx-auto'>
+              <div className='flex justify-center items-center mb-2 gap-6'>
                 <input
                   type='email'
-                  id='email'
-                  name='email'
-                  className='mt-1 block w-full p-2 border border-gray-300 rounded-md'
+                  placeholder='Enter your email'
+                  className='p-3 border border-[#D5DAE1] rounded-lg focus:outline-none  w-80'
                 />
+                <button className='bg-primaryBlue text-white px-6 py-3 rounded-lg '>
+                  Subscribe
+                </button>
               </div>
-            </div>
-            <div className='mb-6 text-left'>
-              <label htmlFor='message' className=' text-sm text-grayColor900'>
-                Message
-              </label>
-              <textarea
-                id='message'
-                name='message'
-                rows={4}
-                placeholder='Tell about your project...'
-                className='mt-1 block w-full p-2 border rounded-md'
-              ></textarea>
-            </div>
-            <div className='text-center'>
-              <button
-                type='submit'
-                className='px-6 py-3 bg-primaryBlue text-neutralWhite font-semibold rounded-lg '
-              >
-                Send us a message
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-      {/* FOOTER */}
-      <div className='flex flex-col gap-8 py-20 bg-primaryBlue'>
-        <Image
-          src='/images/whitelogo3.svg'
-          alt='Pay tuition icon'
-          width={144}
-          height={48}
-          className='mx-auto'
-        />
-        <ul className='flex-1 flex justify-center space-x-6 text-white'>
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Contact Us</li>
-        </ul>
 
-        <p className='text-center text-white'>
-          &copy; 2024 Tuition. All rights reserved.
-        </p>
+              <p className='text-sm font-semiBold text-[#556987] text-left'>
+                We care about your data in our{" "}
+                <span className='text-[#2A3362]'>privacy policy</span>
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
+
+      {/* FOOTER */}
+      <Footer />
     </main>
   );
 }
