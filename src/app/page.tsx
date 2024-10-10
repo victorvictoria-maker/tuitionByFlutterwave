@@ -3,6 +3,7 @@ import Link from "next/link";
 import FAQ from "./components/faq";
 import UniversitesAndPrograms from "./components/universitiesAndPrograms";
 import Footer from "./components/footer";
+import Navbar from "./components/landingpage/navbar";
 
 export default function Home() {
   return (
@@ -11,29 +12,7 @@ export default function Home() {
         className='relative bg-contain bg-no-repeat bg-right'
         style={{ backgroundImage: "url('/images/top-bg-logo.svg')" }}
       >
-        {/* NAVBAR */}
-        <nav className=' flex justify-between items-center py-5  mx-24'>
-          <div className='flex-1 flex justify-start'>
-            <Image
-              src='/images/logo3.svg'
-              alt='Tuition Logo'
-              width={100}
-              height={100}
-            />
-          </div>
-          <ul className='flex-1 flex justify-center space-x-6 text-textColor'>
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>Contact Us</li>
-          </ul>
-          <div className='flex-1 flex justify-end'>
-            <Link href='/signup'>
-              <button className='bg-primaryBlue text-neutralWhite py-2 px-4 rounded-lg font-light'>
-                Sign Up
-              </button>
-            </Link>
-          </div>
-        </nav>
+        <Navbar />
 
         {/* HERO SECTION */}
         <section className='text-center mt-20 mx-24'>
