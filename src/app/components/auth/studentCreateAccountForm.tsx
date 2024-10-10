@@ -242,6 +242,14 @@ const StudentCreateAccountForm = () => {
                 placeholder='eg. ENGINEERING MEDICINE DESIGN'
                 disabled={isPending}
               />
+              {form.formState.errors.fieldOfInterest && (
+                <p className='text-red-600 flex justify-end'>
+                  {form.formState.errors.fieldOfInterest.message}
+                </p>
+              )}
+              {error && (
+                <p className='text-red-600 flex justify-end'>{error}</p>
+              )}
             </div>
 
             <div className=' text-sm  '>

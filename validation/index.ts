@@ -14,7 +14,9 @@ export const SignupSchema = z
     terms: z.boolean().refine((val) => val === true, {
       message: "You must accept the Terms of Service and Privacy Policy",
     }),
-    fieldOfInterest: z.string().nullable(),
+    fieldOfInterest: z.string().min(1, {
+      message: "Field of interest is required",
+    }),
     password: z
       .string()
       .min(8, {

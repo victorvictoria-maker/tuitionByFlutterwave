@@ -8,12 +8,14 @@ const Navbar = () => {
       {/* NAVBAR */}
       <nav className=' flex justify-between items-center py-5  mx-24'>
         <div className='flex-1 flex justify-start'>
-          <Image
-            src='/images/logo3.svg'
-            alt='Tuition Logo'
-            width={100}
-            height={100}
-          />
+          <Link href='/'>
+            <Image
+              src='/images/logo3.svg'
+              alt='Tuition Logo'
+              width={100}
+              height={100}
+            />
+          </Link>
         </div>
         <ul className='flex-1 flex justify-center space-x-6 text-textColor'>
           <Link href='/'>Features</Link>

@@ -17,7 +17,7 @@ export async function signupStudent(data: {
     };
 
     const response = await fetch(
-      "https://tuition2-6.onrender.com/student/signup",
+      "https://tuition2-crra.onrender.com/student/signup",
       {
         method: "POST",
         headers: {
@@ -54,13 +54,18 @@ export async function loginStudent(data: { email: string; password: string }) {
     // Converting the data to x-www-form-urlencoded format
     const urlEncodedData = new URLSearchParams(modifiedData);
 
-    const response = await fetch("https://tuition2-6.onrender.com/auth/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: urlEncodedData.toString(),
-    });
+    // https://tuition2-6.onrender.com
+
+    const response = await fetch(
+      "https://tuition2-crra.onrender.com/auth/login",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: urlEncodedData.toString(),
+      }
+    );
 
     const result = await response.json();
 

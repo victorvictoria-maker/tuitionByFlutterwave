@@ -14,7 +14,7 @@ const VerifyAccount = () => {
       const verifyAccount = async (verificationToken: string) => {
         try {
           const response = await fetch(
-            `https://tuition2-6.onrender.com/student/verify/${verificationToken}`,
+            `https://tuition2-crra.onrender.com/student/verify/${verificationToken}`,
             {
               method: "GET",
               headers: {
